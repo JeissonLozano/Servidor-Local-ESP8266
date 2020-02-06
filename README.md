@@ -13,13 +13,13 @@ Este código pertenece al microcontrolador esp8266 de una serie de IoT, en esta 
 # Para instalar MQTT:
 
 Comandos:
-$ apt-get update
-$ apt-get install mosquitto
-$ apt-get install mosquitto-clients
+apt-get update
+apt-get install mosquitto
+apt-get install mosquitto-clients
 
 -Para la prueba Comandos:
-$ mosquitto_sub -h localhost -t "topic/IoT"
-$ mosquitto_pub -h localhost -t "topic/IoT" -m "Hola mundo!"
+mosquitto_sub -h localhost -t "topic/IoT"
+mosquitto_pub -h localhost -t "topic/IoT" -m "Hola mundo!"
 
 # Para WebSocket:
 
@@ -27,9 +27,10 @@ $ mosquitto_pub -h localhost -t "topic/IoT" -m "Hola mundo!"
 -El comando "touch" sirve para crear y "nano" para modificar
 
 # Comandos:
-$ cd /etc/mosquitto/conf.d
-$ touch websockets.conf
-$ nano websockets.conf  
+cd /etc/mosquitto/conf.d
+touch websockets.conf
+nano websockets.conf  
+
 -Agregamos lo siguiente dentro de websockets.conf 
 
 listener 1883
@@ -40,22 +41,20 @@ protocol websockets
 
 # Luego:
 -Reiniciamos mosquitto con el siguiente comandos:
-$ systemctl restart mosquitto
+systemctl restart mosquitto
 
 *Reiniciamos la máquina virtual.
 
 -Instalamos Apache y git:
 
 Comando:
-$ apt-get install apache2
-$ apt-get install git
+apt-get install apache2
+apt-get install git
 
 -Luego clonamos el siguiente repositorio en la siguiente dirección:
-Comando:
-
-$ cd /var/www/html/
-$ git clone https://github.com/hivemq/hivemq-mqtt-web-client.git mqtt-web
-$ chown www-data:www-data -R mqtt-web
+cd /var/www/html/
+git clone https://github.com/hivemq/hivemq-mqtt-web-client.git mqtt-web
+chown www-data:www-data -R mqtt-web
 
 -Listo accedemos desde nuestro navegador ej:
 http://"localhost"/mqtt-web/
