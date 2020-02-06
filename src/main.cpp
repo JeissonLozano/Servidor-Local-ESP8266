@@ -11,9 +11,9 @@ SoftwareSerial SerialESP8266(4,5); // RX, TX
 //-------------------VARIABLES GLOBALES--------------------------
 int contconexion = 0;
 
-const char* ssid = "Hola";
-const char* password = "wwdu0087";
-const char* mqtt_server = "192.168.1.15";
+const char* ssid = "Nombre de la red";
+const char* password = "contraseña de la red";
+const char* mqtt_server = "ip del servidor mqtt";
 const int mqttPort = 1883;
  
 WiFiClient espClient;
@@ -51,9 +51,6 @@ char CORRIENTE[50];
 char POTENCIA[50];
 char VATIOSHORA[50];
 
-
-
-
 //---------------------------  CALLBACK ------------------------------------------------
 
 void callback(char* topic, byte* payload, unsigned int length) {
@@ -79,8 +76,6 @@ void callback(char* topic, byte* payload, unsigned int length) {
           digitalWrite(16, LOW);
         }
   }
-
-
 }
 
 //------------------------------------------------------------------------------
@@ -311,9 +306,7 @@ else{
 ///
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-}
-
-  
+} 
     VH=VH+(0.00555556*P);
     Entero_VH=VH;
     Dec_VH=(VH-Entero_VH)*100;
