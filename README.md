@@ -20,14 +20,15 @@ $ apt-get install mosquitto-clients
 ```
 
 -Para la prueba Comandos:
-mosquitto_sub -h localhost -t "topic/IoT"
-mosquitto_pub -h localhost -t "topic/IoT" -m "Hola mundo!"
-
+```
+$ mosquitto_sub -h localhost -t "topic/IoT"
+$ mosquitto_pub -h localhost -t "topic/IoT" -m "Hola mundo!"
+```
 # Para WebSocket:
-
+```
 -En esta direeción /etc/mosquitto/conf.d creamos un archivo websockets.conf 
 -El comando "touch" sirve para crear y "nano" para modificar
-
+```
 # Comandos:
 ```
 $ cd /etc/mosquitto/conf.d
