@@ -29,7 +29,7 @@ $ mosquitto_pub -h localhost -t "topic/IoT" -m "Hola mundo!"
 -En esta direeción /etc/mosquitto/conf.d creamos un archivo websockets.conf 
 -El comando "touch" sirve para crear y "nano" para modificar
 ```
-# Comandos:
+Comandos:
 ```
 $ cd /etc/mosquitto/conf.d
 $ touch websockets.conf
