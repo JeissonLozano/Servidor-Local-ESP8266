@@ -49,7 +49,7 @@ protocol websockets
 ```
 $ systemctl restart mosquitto
 ```
-*Reiniciamos la máquina virtual.
+*Reiniciamos la máquina virtual (IMPORTANTE).
 
 -Instalamos Apache y git Comandos:
 ```
