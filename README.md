@@ -51,8 +51,7 @@ $ systemctl restart mosquitto
 ```
 *Reiniciamos la máquina virtual.
 
--Instalamos Apache y git:
--Comandos:
+-Instalamos Apache y git Comandos:
 ```
 $ apt-get install apache2
 $ apt-get install git
