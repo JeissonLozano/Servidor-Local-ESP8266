@@ -67,3 +67,10 @@ $ chown www-data:www-data -R mqtt-web
 http://"localhost"/mqtt-web/
 ```
 -En este caso "localhost" es la ip que te brinda el servidor
+
+## Construido con 🛠️
+* [VsCode](https://code.visualstudio.com/) - Editor de texto Visual Studio Code
+* [PlatformIO](https://platformio.org/) - PlatformIO IDE
+
+## Autor ✒️
+* **Jeisson Lozano** - *Desarrollador* - [Jeisson Lozano](https://github.com/JeissonLozano)
